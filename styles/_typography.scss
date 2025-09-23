@@ -1,0 +1,42 @@
+@use '.././assets/fonts/Roboto-Regular.ttf';
+@use '.././assets/fonts/Roboto-Bold.ttf';
+@use 'functions' as *;
+
+@mixin text-preset-1-bold {
+  font-family: 'Roboto', sans-serif;
+  font-size: pxToRem(56);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-1-bold-mobile {
+  font-family: 'Roboto', sans-serif;
+  font-size: pxToRem(40);
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-2-bold {
+  font-family: 'Roboto', sans-serif;
+  font-size: pxToRem(16);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+@mixin text-preset-2-regular {
+  font-family: 'Roboto', sans-serif;
+  font-size: pxToRem(16);
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+@mixin text-preset-3-bold {
+  font-family: 'Roboto', sans-serif;
+  font-size: pxToRem(12);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+}
