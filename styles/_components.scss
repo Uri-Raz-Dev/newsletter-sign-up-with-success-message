@@ -1,3 +1,34 @@
-@use 'media';
-@use 'typography';
-@use 'functions';
+@use 'media' as *;
+@use 'typography' as *;
+@use 'functions' as *;
+@use 'variables' as *;
+
+.sign-up-info {
+  color: $blue800;
+  h1 {
+    @include text-preset-1-bold-mobile;
+  }
+  p,
+  ul {
+    @include text-preset-2-regular;
+  }
+}
+
+.email-form {
+  label[for='email'] {
+    color: $blue800;
+    @include text-preset-3-bold;
+  }
+  #email {
+    outline: $grey;
+    border-radius: 8px;
+    border: 1px solid $grey;
+  }
+  button {
+    background-color: $blue800;
+    color: $white;
+    @include text-preset-2-bold;
+    text-wrap: nowrap;
+    border-radius: 8px;
+  }
+}

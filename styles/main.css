@@ -91,4 +91,48 @@ body {
 .sign-up-container form button {
   padding-inline: 3em;
   padding-block: 1em;
+}
+
+.sign-up-info {
+  color: hsl(234, 29%, 20%);
+}
+.sign-up-info h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.sign-up-info p,
+.sign-up-info ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.email-form label[for=email] {
+  color: hsl(234, 29%, 20%);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+.email-form #email {
+  outline: hsl(0, 0%, 58%);
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 58%);
+}
+.email-form button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-wrap: nowrap;
+  border-radius: 8px;
 }/*# sourceMappingURL=main.css.map */
