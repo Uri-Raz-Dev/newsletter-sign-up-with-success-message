@@ -1,0 +1,68 @@
+@use 'media' as *;
+@use 'typography' as *;
+@use 'functions' as *;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: pxToRem(40);
+}
+
+.sign-up-container {
+  display: flex;
+  flex-direction: column;
+  gap: pxToRem(40);
+  // align-items: center;
+  .sign-up-info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-inline: pxToRem(24);
+    // justify-content: center;
+    gap: pxToRem(24);
+
+    ul {
+      display: flex;
+      // list-style: url('.././assets/images/icon-list.svg');
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: pxToRem(8);
+      li {
+        position: relative;
+        margin-inline: pxToRem(24);
+        &::before {
+          content: url(../assets/images/icon-list.svg);
+          position: absolute;
+          left: -24px;
+          height: 21px;
+        }
+        p {
+          margin-inline-start: pxToRem(16);
+          // text-wrap: wrap;
+        }
+      }
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-inline: pxToRem(24);
+
+    label {
+      margin-block-end: pxToRem(8);
+      // text-align: center;
+    }
+
+    input {
+      margin-block-end: pxToRem(24);
+      padding-inline: pxToEm(24);
+      padding-block: pxToEm(16);
+    }
+
+    button {
+      padding-inline: pxToEm(48);
+      padding-block: pxToEm(16);
+    }
+  }
+}
