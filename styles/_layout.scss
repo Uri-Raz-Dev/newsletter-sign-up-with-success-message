@@ -4,15 +4,36 @@
 @use 'variables' as *;
 
 body {
-  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  @include media(tablet) {
+    align-items: center;
+    justify-content: center;
+    background-color: $blue700;
+  }
+}
+
+.layout-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   gap: pxToRem(40);
+  max-width: pxToRem(608);
+  @include media(tablet) {
+    background-color: $white;
+    padding: pxToRem(40);
+    border-radius: 36px;
+    // min-width: pxToRem(608);
+  }
+
   > .img-container {
     img {
       width: 100%;
       max-width: pxToRem(768);
+      @include media(tablet) {
+        border-radius: 15px;
+      }
     }
   }
 }
@@ -30,6 +51,15 @@ body {
   // opacity: 100%;
   // opacity: 0%;
   // opacity: 50%;
+  @include media(tablet) {
+    width: pxToRem(504);
+    height: pxToRem(520);
+    border-radius: 36px;
+    padding: pxToRem(64);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
   > * {
     margin-inline: pxToRem(24);
   }
@@ -48,6 +78,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: pxToRem(40);
+  > * {
+    @include media(tablet) {
+      padding-inline: 0px;
+    }
+  }
   // padding: 2rem;
   .sign-up-info {
     display: flex;
@@ -101,6 +136,28 @@ body {
       padding-block: pxToRem(16);
       max-width: pxToRem(528);
       min-width: pxToRem(327);
+    }
+  }
+}
+
+// TABLET
+
+@include media(tablet) {
+  body {
+  }
+  .layout-container {
+    background-color: $white;
+    padding: pxToRem(40);
+    border-radius: 36px;
+    .img-container {
+      img {
+        border-radius: 15px;
+      }
+    }
+    .sign-up-container {
+      > * {
+        padding-inline: 0px;
+      }
     }
   }
 }

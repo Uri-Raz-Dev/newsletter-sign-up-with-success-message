@@ -38,15 +38,40 @@ ol {
   font-style: normal;
 }
 body {
-  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  gap: 2.5rem;
 }
-body > .img-container img {
+@media screen and (min-width: 48rem) {
+  body {
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(235, 18%, 26%);
+  }
+}
+
+.layout-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 38rem;
+}
+@media screen and (min-width: 48rem) {
+  .layout-container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem;
+    border-radius: 36px;
+  }
+}
+.layout-container > .img-container img {
   width: 100%;
   max-width: 48rem;
+}
+@media screen and (min-width: 48rem) {
+  .layout-container > .img-container img {
+    border-radius: 15px;
+  }
 }
 
 .success-message {
@@ -59,6 +84,17 @@ body > .img-container img {
   gap: 2rem;
   background-color: hsl(0, 0%, 100%);
   z-index: 1;
+}
+@media screen and (min-width: 48rem) {
+  .success-message {
+    width: 31.5rem;
+    height: 32.5rem;
+    border-radius: 36px;
+    padding: 4rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .success-message > * {
   margin-inline: 1.5rem;
@@ -78,6 +114,11 @@ body > .img-container img {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+}
+@media screen and (min-width: 48rem) {
+  .sign-up-container > * {
+    padding-inline: 0px;
+  }
 }
 .sign-up-container .sign-up-info {
   display: flex;
@@ -127,6 +168,19 @@ body > .img-container img {
   min-width: 20.4375rem;
 }
 
+@media screen and (min-width: 48rem) {
+  .layout-container {
+    background-color: hsl(0, 0%, 100%);
+    padding: 2.5rem;
+    border-radius: 36px;
+  }
+  .layout-container .img-container img {
+    border-radius: 15px;
+  }
+  .layout-container .sign-up-container > * {
+    padding-inline: 0px;
+  }
+}
 .success-message {
   color: hsl(234, 29%, 20%);
 }
@@ -186,7 +240,6 @@ body > .img-container img {
 
 .email-form .label-container {
   display: flex;
-  justify-content: space-between;
   color: hsl(234, 29%, 20%);
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
@@ -194,9 +247,16 @@ body > .img-container img {
   line-height: 150%;
   letter-spacing: 0;
 }
+.email-form .label-container label {
+  flex-grow: 1;
+  flex-shrink: 0;
+  max-width: 26rem;
+  min-width: 13.5625rem;
+}
 .email-form .label-container span {
   display: none;
   color: hsl(4, 100%, 67%);
+  text-wrap: nowrap;
 }
 .email-form #email {
   outline: hsl(0, 0%, 58%);

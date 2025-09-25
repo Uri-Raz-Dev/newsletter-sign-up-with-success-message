@@ -1,19 +1,22 @@
 const FORM = document.querySelector('.email-form')
+const LAYOUT = document.querySelector('.layout-container')
 const INPUT = document.getElementById('email')
 const SUCCESS_MSG = document.querySelector('.success-message')
 const DISMISS_MSG = document.querySelector('.dismiss-msg')
 const EMAIL_ERR = document.querySelector('.email-err')
+const USER_EMAIL = document.querySelector('.user-email')
 const EXPRESSION = new RegExp(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
 function handleSubmit(e) {
   e.preventDefault()
 
   const formData = new FormData(e.target)
   const data = Object.fromEntries(formData)
-  let successMsgDisplay = getComputedStyle(SUCCESS_MSG).display
   if (EXPRESSION.test(data.email)) {
+    LAYOUT.style.display = 'none'
     SUCCESS_MSG.style.display = 'flex'
     INPUT.classList.remove('error')
     EMAIL_ERR.style.display = 'none'
+    USER_EMAIL.textContent = INPUT.value
     INPUT.value = ''
   } else {
     INPUT.classList.add('error')
@@ -27,4 +30,5 @@ function handleSubmit(e) {
 FORM.addEventListener('submit', handleSubmit)
 DISMISS_MSG.addEventListener('click', () => {
   SUCCESS_MSG.style.display = 'none'
+  LAYOUT.style.display = 'flex'
 })

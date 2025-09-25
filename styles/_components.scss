@@ -39,12 +39,19 @@
 .email-form {
   .label-container {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     color: $blue800;
     @include text-preset-3-bold;
+    label {
+      flex-grow: 1;
+      flex-shrink: 0;
+      max-width: pxToRem(416);
+      min-width: pxToRem(217);
+    }
     span {
       display: none;
       color: $red;
+      text-wrap: nowrap;
     }
   }
   // label[for='email'] {

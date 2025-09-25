@@ -10,9 +10,6 @@
     <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   </head>
   <body>
-    <div class="img-container">
-      <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign up picture" />
-    </div>
     <div class="success-message">
       <div>
         <img src="./assets/images/icon-success.svg" alt="success icon" />
@@ -21,43 +18,48 @@
       <p>A confirmation email has been sent to <span class="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
       <button class="dismiss-msg">Dismiss message</button>
     </div>
-    <section class="sign-up-container">
-      <article class="sign-up-info">
-        <h1>Stay updated!</h1>
+    <div class="layout-container">
+      <div class="img-container">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign up picture" />
+      </div>
+      <section class="sign-up-container">
+        <article class="sign-up-info">
+          <h1>Stay updated!</h1>
 
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>
-            <p>Product discovery and building what matters</p>
-          </li>
-          <li>
-            <p>Measuring to ensure updates are a success</p>
-          </li>
-          <li>
-            <p>And much more!</p>
-          </li>
-        </ul>
-      </article>
-      <form class="email-form" action="" novalidate>
-        <div class="label-container">
-          <label for="email">Email address</label>
-          <span class="email-err">Valid email required</span>
-        </div>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <p>Product discovery and building what matters</p>
+            </li>
+            <li>
+              <p>Measuring to ensure updates are a success</p>
+            </li>
+            <li>
+              <p>And much more!</p>
+            </li>
+          </ul>
+        </article>
+        <form class="email-form" action="" novalidate>
+          <div class="label-container">
+            <label for="email">Email address</label>
+            <span class="email-err">Valid email required</span>
+          </div>
 
-        <input id="email" autocomplete="off" type="email" name="email" placeholder="email@company.com" />
-        <button>Subscribe to monthly newsletter</button>
-      </form>
-    </section>
+          <input id="email" autocomplete="off" type="email" name="email" placeholder="email@company.com" />
+          <button>Subscribe to monthly newsletter</button>
+        </form>
+      </section>
 
-    <!-- Sign-up form end -->
+      <!-- Sign-up form end -->
 
-    <!-- Success message start -->
+      <!-- Success message start -->
 
-    <!-- Success message end -->
+      <!-- Success message end -->
 
-    <!-- <div class="attribution">
+      <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+    </div>
   </body>
 </html>
