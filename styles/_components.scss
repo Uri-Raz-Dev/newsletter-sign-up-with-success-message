@@ -7,6 +7,7 @@
   color: $blue800;
   h1 {
     @include text-preset-1-bold-mobile;
+    text-wrap: nowrap;
   }
   p,
   ul {
@@ -23,12 +24,18 @@
     outline: $grey;
     border-radius: 8px;
     border: 1px solid $grey;
+    color: $blue800;
+    @include text-preset-2-regular;
+    &:focus {
+      border: 1px solid $blue800;
+    }
   }
   button {
     background-color: $blue800;
     color: $white;
     @include text-preset-2-bold;
     text-wrap: nowrap;
+    border: 0;
     border-radius: 8px;
   }
 }

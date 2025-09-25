@@ -13,6 +13,11 @@
     <div class="img-container">
       <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign up picture" />
     </div>
+    <div class="success-message">
+      <div>
+        <img src="./assets/images/icon-success.svg" alt="success icon" />
+      </div>
+    </div>
     <section class="sign-up-container">
       <article class="sign-up-info">
         <h1>Stay updated!</h1>
@@ -30,9 +35,9 @@
           </li>
         </ul>
       </article>
-      <form class="email-form" action="">
+      <form class="email-form" action="" novalidate>
         <label for="email">Email address</label>
-        <input id="email" type="email" name="email" placeholder="email@company.com" required />
+        <input id="email" autocomplete="off" type="email" name="email" placeholder="email@company.com" />
         <button>Subscribe to monthly newsletter</button>
       </form>
     </section>
