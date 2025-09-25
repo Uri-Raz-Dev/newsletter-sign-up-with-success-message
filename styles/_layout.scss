@@ -19,7 +19,7 @@ body {
 
 .success-message {
   position: absolute;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   padding-block-start: pxToRem(149);
@@ -84,7 +84,7 @@ body {
     flex-direction: column;
     padding-inline: pxToRem(24);
 
-    label {
+    .label-container {
       margin-block-end: pxToRem(8);
     }
 

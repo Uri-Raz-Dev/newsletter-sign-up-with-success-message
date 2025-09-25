@@ -51,7 +51,7 @@ body > .img-container img {
 
 .success-message {
   position: absolute;
-  display: flex;
+  display: none;
   width: 100%;
   height: 100%;
   padding-block-start: 9.3125rem;
@@ -110,7 +110,7 @@ body > .img-container img {
   flex-direction: column;
   padding-inline: 1.5rem;
 }
-.sign-up-container form label {
+.sign-up-container form .label-container {
   margin-block-end: 0.5rem;
 }
 .sign-up-container form input {
@@ -184,13 +184,19 @@ body > .img-container img {
   letter-spacing: 0;
 }
 
-.email-form label[for=email] {
+.email-form .label-container {
+  display: flex;
+  justify-content: space-between;
   color: hsl(234, 29%, 20%);
   font-family: "Roboto", sans-serif;
   font-size: 0.75rem;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0;
+}
+.email-form .label-container span {
+  display: none;
+  color: hsl(4, 100%, 67%);
 }
 .email-form #email {
   outline: hsl(0, 0%, 58%);
@@ -203,8 +209,21 @@ body > .img-container img {
   line-height: 150%;
   letter-spacing: 0;
 }
+.email-form #email::-moz-placeholder {
+  color: hsl(0, 0%, 58%);
+}
+.email-form #email::placeholder {
+  color: hsl(0, 0%, 58%);
+}
+.email-form #email.error {
+  border: 1px solid hsl(4, 100%, 67%);
+  background-color: hsl(4, 100%, 95%);
+}
 .email-form #email:focus {
   border: 1px solid hsl(234, 29%, 20%);
+}
+.email-form #email:focus.error {
+  border: 1px solid hsl(4, 100%, 67%);
 }
 .email-form button {
   background-color: hsl(234, 29%, 20%);

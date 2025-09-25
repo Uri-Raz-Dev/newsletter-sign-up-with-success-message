@@ -18,8 +18,8 @@
         <img src="./assets/images/icon-success.svg" alt="success icon" />
       </div>
       <h1>Thanks for subscribing!</h1>
-      <p>A confirmation email has been sent to <span>ash@loremcompany.com</span>. Please open it and click the button inside to confirm your subscription.</p>
-      <button>Dismiss message</button>
+      <p>A confirmation email has been sent to <span class="user-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+      <button class="dismiss-msg">Dismiss message</button>
     </div>
     <section class="sign-up-container">
       <article class="sign-up-info">
@@ -39,7 +39,11 @@
         </ul>
       </article>
       <form class="email-form" action="" novalidate>
-        <label for="email">Email address</label>
+        <div class="label-container">
+          <label for="email">Email address</label>
+          <span class="email-err">Valid email required</span>
+        </div>
+
         <input id="email" autocomplete="off" type="email" name="email" placeholder="email@company.com" />
         <button>Subscribe to monthly newsletter</button>
       </form>
