@@ -3,6 +3,27 @@
 @use 'functions' as *;
 @use 'variables' as *;
 
+.success-message {
+  color: $blue800;
+  h1 {
+    @include text-preset-1-bold-mobile;
+  }
+  p {
+    @include text-preset-2-regular;
+    span {
+      @include text-preset-2-bold;
+    }
+  }
+  button {
+    background-color: $blue800;
+    color: $white;
+    @include text-preset-2-bold;
+    text-wrap: nowrap;
+    border: 0;
+    border-radius: 8px;
+  }
+}
+
 .sign-up-info {
   color: $blue800;
   h1 {

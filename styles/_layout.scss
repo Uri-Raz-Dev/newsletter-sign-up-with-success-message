@@ -19,14 +19,29 @@ body {
 
 .success-message {
   position: absolute;
-  display: none;
-  flex-direction: column;
+  display: flex;
   width: 100%;
   height: 100%;
+  padding-block-start: pxToRem(149);
+  flex-direction: column;
+  gap: pxToRem(32);
   background-color: $white;
   z-index: 1;
+  // opacity: 100%;
+  // opacity: 0%;
+  // opacity: 50%;
   > * {
     margin-inline: pxToRem(24);
+  }
+  p {
+    flex-grow: 0.83;
+    flex-shrink: 0;
+  }
+  button {
+    padding-inline: pxToRem(104);
+    padding-block: pxToRem(16);
+    max-width: pxToRem(528);
+    min-width: pxToRem(327);
   }
 }
 .sign-up-container {
@@ -71,7 +86,6 @@ body {
 
     label {
       margin-block-end: pxToRem(8);
-      // text-align: center;
     }
 
     input {

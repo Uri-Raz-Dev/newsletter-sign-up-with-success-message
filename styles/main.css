@@ -51,15 +51,27 @@ body > .img-container img {
 
 .success-message {
   position: absolute;
-  display: none;
-  flex-direction: column;
+  display: flex;
   width: 100%;
   height: 100%;
+  padding-block-start: 9.3125rem;
+  flex-direction: column;
+  gap: 2rem;
   background-color: hsl(0, 0%, 100%);
   z-index: 1;
 }
 .success-message > * {
   margin-inline: 1.5rem;
+}
+.success-message p {
+  flex-grow: 0.83;
+  flex-shrink: 0;
+}
+.success-message button {
+  padding-inline: 6.5rem;
+  padding-block: 1rem;
+  max-width: 33rem;
+  min-width: 20.4375rem;
 }
 
 .sign-up-container {
@@ -113,6 +125,43 @@ body > .img-container img {
   padding-block: 1rem;
   max-width: 33rem;
   min-width: 20.4375rem;
+}
+
+.success-message {
+  color: hsl(234, 29%, 20%);
+}
+.success-message h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.success-message p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+.success-message p span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+.success-message button {
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-wrap: nowrap;
+  border: 0;
+  border-radius: 8px;
 }
 
 .sign-up-info {
