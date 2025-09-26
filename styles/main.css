@@ -64,13 +64,61 @@ body {
     border-radius: 36px;
   }
 }
-.layout-container > .img-container img {
+@media screen and (min-width: 90rem) {
+  .layout-container {
+    padding: 2rem !important;
+    min-width: 56.5rem;
+    min-height: 40.0625rem;
+    flex-direction: row;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .layout-container > .img-container {
+    order: 1;
+    width: 100%;
+  }
+}
+.layout-container > .img-container .img-phone {
   width: 100%;
-  max-width: 48rem;
+  display: block;
 }
 @media screen and (min-width: 48rem) {
-  .layout-container > .img-container img {
-    border-radius: 15px;
+  .layout-container > .img-container .img-phone {
+    display: none;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .layout-container > .img-container .img-phone {
+    display: none;
+  }
+}
+.layout-container > .img-container .img-tablet {
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .layout-container > .img-container .img-tablet {
+    width: 100%;
+    display: block;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .layout-container > .img-container .img-tablet {
+    display: none;
+  }
+}
+.layout-container > .img-container .img-desktop {
+  display: none;
+}
+@media screen and (min-width: 48rem) {
+  .layout-container > .img-container .img-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .layout-container > .img-container .img-desktop {
+    width: 100%;
+    display: block;
   }
 }
 
@@ -115,9 +163,17 @@ body {
   flex-direction: column;
   gap: 2.5rem;
 }
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 48rem) and (min-width: 48rem) {
   .sign-up-container > * {
     padding-inline: 0px;
+  }
+}
+@media screen and (min-width: 90rem) {
+  .sign-up-container {
+    width: 23.5rem;
+    height: 28.125rem;
+    align-self: center;
+    margin-inline-end: 4rem;
   }
 }
 .sign-up-container .sign-up-info {
@@ -191,6 +247,15 @@ body {
   line-height: 100%;
   letter-spacing: 0;
 }
+@media screen and (min-width: 48rem) {
+  .success-message h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+}
 .success-message p {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
@@ -229,6 +294,15 @@ body {
   letter-spacing: 0;
   text-wrap: nowrap;
 }
+@media screen and (min-width: 48rem) {
+  .sign-up-info h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+}
 .sign-up-info p,
 .sign-up-info ul {
   font-family: "Roboto", sans-serif;
@@ -236,6 +310,11 @@ body {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0;
+}
+@media screen and (min-width: 90rem) {
+  .sign-up-info ul {
+    text-wrap: nowrap;
+  }
 }
 
 .email-form .label-container {

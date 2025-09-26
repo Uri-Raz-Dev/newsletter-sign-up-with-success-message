@@ -7,6 +7,9 @@
   color: $blue800;
   h1 {
     @include text-preset-1-bold-mobile;
+    @include media(tablet) {
+      @include text-preset-1-bold;
+    }
   }
   p {
     @include text-preset-2-regular;
@@ -29,10 +32,18 @@
   h1 {
     @include text-preset-1-bold-mobile;
     text-wrap: nowrap;
+    @include media(tablet) {
+      @include text-preset-1-bold;
+    }
   }
   p,
   ul {
     @include text-preset-2-regular;
+  }
+  ul {
+    @include media(desktop) {
+      text-wrap: nowrap;
+    }
   }
 }
 
