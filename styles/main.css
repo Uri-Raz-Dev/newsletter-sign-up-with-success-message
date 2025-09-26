@@ -49,6 +49,11 @@ body {
     background-color: hsl(235, 18%, 26%);
   }
 }
+@media screen and (min-width: 90rem) {
+  body {
+    opacity: 52%;
+  }
+}
 
 .layout-container {
   position: relative;
@@ -156,6 +161,12 @@ body {
   padding-block: 1rem;
   max-width: 33rem;
   min-width: 20.4375rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 90rem) {
+  .success-message button:hover {
+    background: linear-gradient(to right, hsl(15, 100%, 61%), hsl(346, 100%, 66%));
+  }
 }
 
 .sign-up-container {
@@ -348,6 +359,16 @@ body {
   line-height: 150%;
   letter-spacing: 0;
 }
+@media screen and (min-width: 90rem) {
+  .email-form #email:focus + .submit-button {
+    background: linear-gradient(to right, hsl(15, 100%, 61%), hsl(346, 100%, 66%));
+  }
+}
+@media screen and (min-width: 90rem) {
+  .email-form #email:focus .email-form #email.error + .submit-button {
+    background-color: hsl(234, 29%, 20%);
+  }
+}
 .email-form #email::-moz-placeholder {
   color: hsl(0, 0%, 58%);
 }
@@ -375,4 +396,5 @@ body {
   text-wrap: nowrap;
   border: 0;
   border-radius: 8px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

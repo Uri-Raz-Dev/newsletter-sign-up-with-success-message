@@ -76,6 +76,16 @@
 
     color: $blue800;
     @include text-preset-2-regular;
+    &:focus + .submit-button {
+      @include media(desktop) {
+        @include gradient;
+      }
+    }
+    &:focus &.error + .submit-button {
+      @include media(desktop) {
+        background-color: $blue800;
+      }
+    }
     &::placeholder {
       color: $grey;
     }
@@ -97,5 +107,6 @@
     text-wrap: nowrap;
     border: 0;
     border-radius: 8px;
+    cursor: pointer;
   }
 }

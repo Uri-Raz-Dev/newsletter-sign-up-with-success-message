@@ -13,6 +13,7 @@ function handleSubmit(e) {
   const data = Object.fromEntries(formData)
   if (EXPRESSION.test(data.email)) {
     LAYOUT.style.display = 'none'
+    document.body.style.opacity = 100 + '%'
     SUCCESS_MSG.style.display = 'flex'
     INPUT.classList.remove('error')
     EMAIL_ERR.style.display = 'none'
@@ -28,7 +29,24 @@ function handleSubmit(e) {
   // console.log(EXPRESSION)
 }
 FORM.addEventListener('submit', handleSubmit)
+
 DISMISS_MSG.addEventListener('click', () => {
   SUCCESS_MSG.style.display = 'none'
   LAYOUT.style.display = 'flex'
+  if (window.innerWidth >= 1440) {
+    document.body.style.opacity = 52 + '%'
+  } else {
+    document.body.style.opacity = 100 + '%'
+  }
+})
+
+INPUT.addEventListener('focusin', () => {
+  document.body.style.opacity = 100 + '%'
+})
+INPUT.addEventListener('focusout', () => {
+  if (EMAIL_ERR.style.display !== 'none' || window.innerWidth <= 1440) {
+    document.body.style.opacity = 100 + '%'
+  } else {
+    document.body.style.opacity = 52 + '%'
+  }
 })

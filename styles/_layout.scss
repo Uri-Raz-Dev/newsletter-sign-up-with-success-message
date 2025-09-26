@@ -12,6 +12,9 @@ body {
     justify-content: center;
     background-color: $blue700;
   }
+  @include media(desktop) {
+    opacity: 52%;
+  }
 }
 
 .layout-container {
@@ -99,6 +102,7 @@ body {
     top: 50%;
     transform: translate(-50%, -50%);
   }
+
   > * {
     margin-inline: pxToRem(24);
   }
@@ -111,6 +115,12 @@ body {
     padding-block: pxToRem(16);
     max-width: pxToRem(528);
     min-width: pxToRem(327);
+    cursor: pointer;
+    &:hover {
+      @include media(desktop) {
+        @include gradient;
+      }
+    }
   }
 }
 .sign-up-container {
