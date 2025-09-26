@@ -23,10 +23,6 @@ function handleSubmit(e) {
     INPUT.classList.add('error')
     EMAIL_ERR.style.display = 'flex'
   }
-
-  console.log(EXPRESSION.test(data.email))
-  console.log(data.email)
-  // console.log(EXPRESSION)
 }
 FORM.addEventListener('submit', handleSubmit)
 

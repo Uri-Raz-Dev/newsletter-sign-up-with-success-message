@@ -41,9 +41,6 @@ body {
     @include media(desktop) {
       order: 1;
       width: 100%;
-      // height: 100%;
-      // object-fit: cover;
-      // flex: 1 0 pxToRem(400);
     }
     .img-phone {
       width: 100%;
@@ -90,9 +87,7 @@ body {
   gap: pxToRem(32);
   background-color: $white;
   z-index: 1;
-  // opacity: 100%;
-  // opacity: 0%;
-  // opacity: 50%;
+
   @include media(tablet) {
     width: pxToRem(504);
     height: pxToRem(520);
@@ -139,21 +134,18 @@ body {
     height: pxToRem(450);
     align-self: center;
     margin-inline-end: pxToRem(64);
-    // flex-shrink: 1;
   }
 
-  // padding: 2rem;
   .sign-up-info {
     display: flex;
     flex-direction: column;
     text-align: start;
     padding-inline: pxToRem(24);
-    // justify-content: center;
+
     gap: pxToRem(24);
 
     ul {
       display: flex;
-      // list-style: url('.././assets/images/icon-list.svg');
       flex-direction: column;
       flex-wrap: wrap;
       gap: pxToRem(8);
@@ -168,7 +160,6 @@ body {
         }
         p {
           margin-inline-start: pxToRem(16);
-          // text-wrap: wrap;
         }
       }
     }

@@ -50,7 +50,6 @@
 .email-form {
   .label-container {
     display: flex;
-    // justify-content: space-between;
     color: $blue800;
     @include text-preset-3-bold;
     label {
@@ -65,10 +64,7 @@
       text-wrap: nowrap;
     }
   }
-  // label[for='email'] {
-  //   color: $blue800;
-  //   @include text-preset-3-bold;
-  // }
+
   #email {
     outline: $grey;
     border-radius: 8px;
