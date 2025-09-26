@@ -16,7 +16,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-landing-page-using-sass-an-flexbox-16qJFNzgBM)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-newsletter-sign-up-form-qhYkgXiWjT)
 - Live Site URL: [Add live site URL here](https://uri-raz-dev.github.io/newsletter-sign-up-with-success-message/)
 
 ## My process
