@@ -49,7 +49,7 @@ body {
     background-color: hsl(235, 18%, 26%);
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   body {
     opacity: 52%;
   }
@@ -69,7 +69,7 @@ body {
     border-radius: 36px;
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .layout-container {
     padding: 2rem !important;
     min-width: 56.5rem;
@@ -78,7 +78,7 @@ body {
     gap: 0;
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .layout-container > .img-container {
     order: 1;
     width: 100%;
@@ -93,7 +93,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .layout-container > .img-container .img-phone {
     display: none;
   }
@@ -107,7 +107,7 @@ body {
     display: block;
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .layout-container > .img-container .img-tablet {
     display: none;
   }
@@ -120,7 +120,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .layout-container > .img-container .img-desktop {
     width: 100%;
     display: block;
@@ -163,7 +163,7 @@ body {
   min-width: 20.4375rem;
   cursor: pointer;
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .success-message button:hover {
     background: linear-gradient(to right, hsl(15, 100%, 61%), hsl(346, 100%, 66%));
   }
@@ -179,7 +179,7 @@ body {
     padding-inline: 0px;
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .sign-up-container {
     width: 23.5rem;
     height: 28.125rem;
@@ -322,7 +322,7 @@ body {
   line-height: 150%;
   letter-spacing: 0;
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .sign-up-info ul {
     text-wrap: nowrap;
   }
@@ -359,12 +359,12 @@ body {
   line-height: 150%;
   letter-spacing: 0;
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .email-form #email:focus + .submit-button {
     background: linear-gradient(to right, hsl(15, 100%, 61%), hsl(346, 100%, 66%));
   }
 }
-@media screen and (min-width: 90rem) {
+@media screen and (min-width: 80rem) {
   .email-form #email:focus .email-form #email.error + .submit-button {
     background-color: hsl(234, 29%, 20%);
   }
